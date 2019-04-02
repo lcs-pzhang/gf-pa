@@ -30,5 +30,19 @@ public class Diamond extends Actor
             world.addScore(-10);
             world.removeObject(this);
         }
-    }    
+        checkKeyPress();
+    }  
+    
+    /**
+     * Check whether a keyboard key has been pressed and react if it has.
+     */
+     private void checkKeyPress()
+    {
+        if (Greenfoot.isKeyDown("down")) 
+        {
+           MyWorld world = (MyWorld)getWorld();
+           world.addScore(20);
+           world.removeObject(this);
+        }
+    }
 }

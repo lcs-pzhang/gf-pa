@@ -20,7 +20,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
         score = 0;
-        time = 1000;
+        time = 200;
         showScore();
         showTime();
 
@@ -79,7 +79,7 @@ public class MyWorld extends World
 
     private void showTime()
     {
-        showText("Time: " + time, 700, 25);
+        showText("Time: " + time, 500, 25);
     }
 
     private void showEndMessage()

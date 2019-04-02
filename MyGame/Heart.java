@@ -9,12 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Heart extends Actor
 {
     private int speed;
+    private int score;
     /**
      * Constructor
      */
     public Heart()
     {
         speed = Greenfoot.getRandomNumber(7) + 1;
+        
     }
     
     /**
@@ -30,5 +32,19 @@ public class Heart extends Actor
             world.addScore(-10);
             world.removeObject(this);
         }
-    }    
+        checkKeyPress();
+    }  
+    
+    /**
+     * Check whether a keyboard key has been pressed and react if it has.
+     */
+     private void checkKeyPress()
+    {
+        if (Greenfoot.isKeyDown("up")) 
+        {
+           MyWorld world = (MyWorld)getWorld();
+           world.addScore(20);
+           world.removeObject(this);
+        }
+    }
 }
