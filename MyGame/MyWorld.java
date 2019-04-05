@@ -20,9 +20,10 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
         score = 0;
-        time = 1000;
+        time = 500;
         showScore();
         showTime();
+        
 
     }
 
@@ -75,6 +76,13 @@ public class MyWorld extends World
     {
         time--;
         showTime();
+        if (time == 497)
+        {
+          GreenfootSound sound = new GreenfootSound("loop.mp3");
+          sound.play();  
+        }
+        
+        
         if (time == 0)
         {
             showEndMessage();
