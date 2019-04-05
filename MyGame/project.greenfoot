@@ -2,7 +2,7 @@
 class.Club.image=kreuz.png
 class.Diamond.image=karo.png
 class.Heart.image=herz.png
-class.MyWorld.image=IMG_4108.JPG
+class.MyWorld.image=space-universe-planets-dark-colorful-stars-abstract-1080P-wallpaper-middle-size.jpg
 class.Spade.image=pik.png
 class.pearl.image=gold-ball.png
 dependency1.from=MyWorld
