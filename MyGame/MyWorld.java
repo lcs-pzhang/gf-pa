@@ -20,7 +20,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
         score = 0;
-        time = 200;
+        time = 500;
         showScore();
         showTime();
 

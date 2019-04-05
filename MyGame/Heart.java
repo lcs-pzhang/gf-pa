@@ -44,6 +44,8 @@ public class Heart extends Actor
         {
            MyWorld world = (MyWorld)getWorld();
            world.addScore(20);
+           GreenfootSound sound = new GreenfootSound("bell3.mp3");
+           sound.play();
            world.removeObject(this);
         }
     }

@@ -14,7 +14,7 @@ public class Club extends Actor
      */
     public Club()
     {
-        speed = Greenfoot.getRandomNumber(7) + 1;
+        speed = Greenfoot.getRandomNumber(8) + 1;
     }
     
      /**
@@ -42,6 +42,8 @@ public class Club extends Actor
         {
            MyWorld world = (MyWorld)getWorld();
            world.addScore(20);
+           GreenfootSound sound = new GreenfootSound("bell2.mp3");
+           sound.play();
            world.removeObject(this);
         }
     }

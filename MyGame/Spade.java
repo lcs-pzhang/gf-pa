@@ -15,7 +15,7 @@ public class Spade extends Actor
      */
     public Spade()
     {
-        speed = Greenfoot.getRandomNumber(4) + 1;
+        speed = Greenfoot.getRandomNumber(10) + 1;
     }
     
     /**
@@ -43,6 +43,8 @@ public class Spade extends Actor
         {
            MyWorld world = (MyWorld)getWorld();
            world.addScore(20);
+           GreenfootSound sound = new GreenfootSound("bell4.mp3");
+           sound.play();
            world.removeObject(this);
         }
     }

@@ -14,7 +14,7 @@ public class Diamond extends Actor
      */
     public Diamond()
     {
-        speed = Greenfoot.getRandomNumber(5) + 1;
+        speed = Greenfoot.getRandomNumber(9) + 1;
     }
     
     /**
@@ -42,6 +42,8 @@ public class Diamond extends Actor
         {
            MyWorld world = (MyWorld)getWorld();
            world.addScore(20);
+           GreenfootSound sound = new GreenfootSound("bell.mp3");
+           sound.play();
            world.removeObject(this);
         }
     }
