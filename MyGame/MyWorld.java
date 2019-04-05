@@ -47,6 +47,11 @@ public class MyWorld extends World
         {
             addObject(new Club(), 300, Greenfoot.getRandomNumber(360));
         }
+        
+        if (Greenfoot.getRandomNumber(100) < 1)
+        {
+            addObject(new pearl(), 300, Greenfoot.getRandomNumber(360));
+        }
         countTime();
     }
 

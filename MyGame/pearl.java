@@ -38,7 +38,7 @@ public class pearl extends Actor
      */
      private void checkKeyPress()
     {
-        if (Greenfoot.isKeyDown("right")) 
+        if (Greenfoot.isKeyDown("right") && Greenfoot.isKeyDown("left")) 
         {
            MyWorld world = (MyWorld)getWorld();
            world.addScore(30);
