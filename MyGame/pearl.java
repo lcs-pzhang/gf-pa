@@ -14,7 +14,7 @@ public class pearl extends Actor
      */
     public pearl()
     {
-        speed = Greenfoot.getRandomNumber(11) + 1;
+        speed = Greenfoot.getRandomNumber(13) + 1;
     }
     
     /**
@@ -41,8 +41,8 @@ public class pearl extends Actor
         if (Greenfoot.isKeyDown("right")) 
         {
            MyWorld world = (MyWorld)getWorld();
-           world.addScore(20);
-           GreenfootSound sound = new GreenfootSound("bell2.mp3");
+           world.addScore(30);
+           GreenfootSound sound = new GreenfootSound("star.mp3");
            sound.play();
            world.removeObject(this);
         }
